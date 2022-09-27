@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Gantari', sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gulzar', serif;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.win-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.win-screen__heading {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.win-screen__heading.win {
+  color: #2ed573;
+}
+
+.win-screen__heading.lose {
+  color: #ff4757;
+}
+
+.win-screen__button {
+  background: transparent;
+  border-radius: 50px;
+  padding: 10px 20px;
+  transition: all .5s;
+}
+
+.win-screen__button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.game-container {
+  padding: 50px 50px;
+}
+
+.game-container__heading {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.game-points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-points .game-winner {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.player-points {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  gap: 200px;
+  width: 700px;
+  margin-bottom: 50px;
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.game-board__player {
+  display: flex;
+  align-items: center;
+}
+
+.game-board__player p {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.placeholder {
+  opacity: .1;
+  width: 250px;
+}
+
+.option {
+  opacity: 1;
+  width: 250px;
+}
+
+.game-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.item {
+  transition: transform .5s;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.item:active {
+  transform: scale(.9);
+}
+
